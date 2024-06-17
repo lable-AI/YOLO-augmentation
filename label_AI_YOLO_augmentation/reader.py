@@ -13,11 +13,11 @@ class ImageAugmentationBuilder:
             'sharpen_factor': None
         }
 
-    def HSV(self, intensity_factor: int):
+    def HSV(self, intensity_factor: float):
         self.config['HSV'] = intensity_factor
         return self
 
-    def noise(self, noise_level: int):
+    def noise(self, noise_level: float):
         if 0 > noise_level or noise_level >= 1:
             raise ValueError("noise level must be in range by 0 to 1 ")
         self.config['noise_level'] = noise_level
