@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-from functions import add_noise_to_image, HSV_image
+from .functions import add_noise_to_image, HSV_image
 
 
 class ImageAugmentationBuilder:
